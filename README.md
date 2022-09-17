@@ -23,7 +23,7 @@ env.json
 
 As mentioned earlier, "TOKEN" is where you put the token of the discord bot.
 
-**-CHANNEL_ID-**
+**CHANNEL_ID**
 
 This is for specifying which channel the update messages should get sent to. 
 You can get the ID of a channel by right clicking it and selecting "Copy ID", if you have Developer Mode enabled.
