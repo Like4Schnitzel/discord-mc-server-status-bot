@@ -11,7 +11,7 @@ envs = load(f)
 
 #setting the bot token
 TOKEN = envs['TOKEN']
-#setting IP to the one provided in envs.json
+#setting IP to the one provided in env.json
 IP = envs['IP']
 #if none has been provided, setting IP to the external IP of the machine this runs on
 if IP == "":
