@@ -63,11 +63,17 @@ async def get_server_info():
         #check if API returned offline
         if online_string != "offline":
             #if not, work on the online Status Update
-            message = "```\nServer Status Update:\nIP: " + IP + " | \U0001F7E2 Online\nCurrent Players:"
-            #add all player names to the Update
-            for player in server_data['players']['list']:
-                message += "\n-) " + player
-            message += "\n```"
+            message = "```\nServer Status Update:\nIP: " + IP + " | \U0001F7E2 Online\n"
+            #check if there is at least one player online
+            if server_data['players']['online'] > 0:
+                message += "Current Players:"
+                #add all player names to the Update
+                for player in server_data['players']['list']:
+                    message += "\n-) " + player
+                message += "\n```"
+            #if no one is online, change message accordingly
+            else:
+                message += "No Players Currently Online\n```"
             #send the Update
             await channel.send(message)
         #do this if the API returns offline
