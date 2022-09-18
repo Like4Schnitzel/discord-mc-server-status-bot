@@ -48,6 +48,7 @@ You may change the number of messages it looks through, or disable it entirely b
 **DELAY_MINS**
 
 This variable is for specifying how many minutes the bot should wait before updating it's information again.
+Setting it lower than 5 isn't recommended as the API will cache data for that amount of time.
 
 Final Steps
 ---
