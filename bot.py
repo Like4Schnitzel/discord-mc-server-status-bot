@@ -66,7 +66,7 @@ async def get_server_info():
             #if so, work on the online Status Update
             message = "```\nServer Status Update:\nIP: " + IP + " | \U0001F7E2 Online\n"
             #check if there is at least one player online
-            if server_data['players']['online'] > 0:
+            if int(CURRENT_PLAYERS) > 0:
                 message += "Current Players:"
                 #add all player names to the Update
                 for player in server_data['players']['list']:
