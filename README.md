@@ -1,5 +1,5 @@
 This is a Discord bot, that gets and displays information about a Minecraft Server, using the Minecraft Server Status API (https://api.mcsrvstat.us/).
-By default it updates it's information every minute, but you may change this in envs.json (more information below).
+By default it updates it's information every 5 minutes, but you may change this in envs.json (more information below).
 In it's status it displays the IP of the server and the current number of players, if the server is online. Otherwise, it will say that the server is offline.
 Everytime a change in player count is detected, it will send an update message in a specified channel.
 The update message contains the IP of the server, online status, and a list of players currently online.
